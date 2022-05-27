@@ -1,0 +1,279 @@
+*{
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+main section article i{
+
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top:-15px;
+}
+.main {
+    background-color: #ebebeb;
+    font-family: 'Courier New', Courier, monospace;
+    width: 90%;
+    margin:auto;
+}
+
+.body{
+    background-color: #fff159;
+}
+
+.logo-container{
+    box-sizing: border-box;
+    display: inline-block;
+    height: 33px;
+    margin-right: 5px;
+    padding-top: 12px;
+    width: 50%;
+}
+.logo-searchbox-container{
+    display: flex;
+}
+.logo{
+    background-image: url("/img/logo-mercado-liebre.svg");
+    box-sizing: border-box;
+    display: inline-block;
+    height: 33px;
+    background-repeat: no-repeat;
+    width: 50%;
+}
+
+.wrapper{
+    display: inline-block;
+    top: -20px;
+    width: 50%;
+}
+.content-box {
+    border: 5px double #000;
+    font-size: 24px;
+    padding: 10px;
+    width: 50%;
+}
+
+.input-search{
+    width: 100%;
+}
+
+.top-content{
+    background-color: #fff159;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: 'roboto';
+    width: 100%;
+}
+
+.left-nav{
+    display: none;
+    margin-left: 1px;
+    margin-right: 1px;
+    padding: 0px;
+    font-size: 15px;
+}
+
+.right-nav{
+    display: none;
+    margin-left: 1px;
+    margin-right: 1px;
+    font-size: 15px;
+}
+
+.nav__li{
+    display: inline-block;
+    color: #fff;
+    font-size: 12x;
+    padding: 1px; 
+}
+
+.nav__li i{
+    box-sizing: border-box;
+    margin-right: 5px;
+    text-align: right;
+    width :30px;
+
+}
+
+.nav__li a{
+    text-decoration: none;
+}
+
+.burger-menu{
+    margin-left:50%;
+}
+
+
+.fa-bars{
+    background-color: blue;
+    color: white;
+    border-radius: 2px;
+}
+
+.fa-address-card{
+    color: #000;
+}
+
+.fa-arrow-right-long-to-line{
+    color: #000;
+}
+
+.fa-basket-shopping{
+    color: #000;
+}
+
+.header-paragraph{
+    font-size: 12px;
+    text-align: center;
+}
+
+.publicidad{
+    height: 10%;
+    width: 100%;
+}
+
+.fa-arrow-right{
+    color: #000;
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.precios{
+    color: #666;
+    font-size: auto;
+    width: 30%;
+}
+
+.descuentos{
+    color:  #0f540d;
+    font-size: auto;
+    width: 70%;
+}
+
+.descripciones{
+    font-size: 16px;
+    display: block;
+    opacity: 0;
+
+}
+
+.div-container {
+    border: 1px solid #ebebeb;
+    padding: 15px;
+}
+
+.article:hover .descripciones{
+        opacity: 1;
+}
+
+.article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.article{
+    background-color: #ebebeb;
+    border: 1px double #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 10%;
+    width: 100%;
+    margin: auto;
+}
+
+.article i{
+    border: 1px solid #ebebeb;
+    border-radius: 15px;
+    color:  #39b54a;
+}
+
+.footer{
+    background-color: #ebebeb;
+    width: 90%;
+    margin: auto;
+}
+
+.copyright-note{
+    color: #444;
+    font-style: italic;
+    font-weight: lighter;
+
+}
+
+.div-price-discount-container{
+    display: flex;
+}
+
+.fa-credit-card-alt{
+    color: #1259c3;
+}
+
+.fa-gift{
+    color: #1259c3;
+}
+
+.fa-shield{
+    color: #1259c3;
+}
+
+.fa-truck{
+    transition: transform 450ms;
+}
+
+.fa-truck:hover{
+    transform: rotateZ(-90deg);
+}
+@media(min-width : 361px){
+
+    .left-nav{
+        display: inline-block;
+        width: 49%;
+    }
+
+    .right-nav{
+        display: inline-block;
+        width: 49%;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+
+    .article{
+        width: 50%;
+
+    }
+
+    .logo-searchbox-container{
+        width:60%
+    }
+
+    .header-paragraph{
+        width: 40%;
+        display: inline-block;
+    }
+    .content-box{
+        width: 100%;
+    }
+
+
+}
+
+@media(min-width:761px){
+    .article{
+        width: 25%;
+    }
+}
